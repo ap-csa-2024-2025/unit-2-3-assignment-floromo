@@ -4,6 +4,8 @@ public class Classwork
   {
     System.out.println(firstLastN("apple", 1));
     System.out.println(delEnd("apple", 3));
+    System.out.println(compareLower("BAgels", "candLes"));
+    System.out.println(lengthFirst("Everything in its right place"));
 
   }
 
@@ -18,5 +20,15 @@ public class Classwork
     return newWord;
   }
 
-  public static int compareLower(String )
+  public static int compareLower(String word1, String word2){
+    word1 = word1.toLowerCase();
+    word2 = word2.toLowerCase();
+    return word1.compareTo(word2);
+  }
+
+  public static int lengthFirst(String sentence){
+    int n = sentence.indexOf(" ");
+    String first = sentence.substring(0, n);
+    return first.length();
+  }
 }
